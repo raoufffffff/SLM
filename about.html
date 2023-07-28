@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="head w-100 p-3 text-center text-light">
+        <a href="index.html">
+            <img src="./logo.png" class="img-fluid" alt="logo">
+        </a>
+    </header>
+    <div class="back w-100 d-flex justify-content-center align-items-center pt-4">
+        <a class="a" href="index.html">back home</a>
+    </div>
+    <div class="container form text-center p-5 deplay">
+        <h3>Write the information below</h3>
+        <h5>thanks for buying from us</h5>
+        <form action=" #" class="realForm mt-3 d-flex flex-column align-items-center" method="get">
+            <input class="m-2 input" type="text" id="name" placeholder="enter your name" data-m="name">
+            <input class="m-2 input" type="email" id="email" placeholder="enter your email" data-m="email">
+            <input class="m-2 input" type="tel" id="tel" placeholder="enter your phone number" data-m="phone number">
+            <input class="m-2 input" type="text" id="adders" placeholder="enter your adders" data-m="adders">
+            <!-- <input class="pForm m-2" type="text" id="prodect"> -->
+            <h6 class="fs-5">The price of one product : <span class="Sprice fs-4"></span></h6>
+            <input type="number" class="m-2 input Quantity" placeholder="Quantity." id="Quantity" value="1"
+                data-m="Quantity">
+            <h6 class="fs-5 mt-1">the total : <span class="total fs-4"></span></h6>
+            <input class="m-2" type="submit" value="confirm">
+        </form>
+    </div>
+    <div class="thanks container text-center text-capitalize p-5 h-100 d-none">
+        <p>thanks for buying from us <i class="fa-brands fa-shopify"></i></p>
+        <i class="fa-solid fa-check"></i>
+        <div class="contact d-flex justify-content-center align-items-center">
+            <p class="fs-5">contact us</p>
+            <a href="#"><i class="fa-brands fa-facebook m-2 "></i></a>
+            <a href="#"><i class="fa-solid fa-at m-1 "></i></a>
+        </div>
+    </div>
+    <script src=" ./js/about.js"></script>
+</body>
+
+</html>

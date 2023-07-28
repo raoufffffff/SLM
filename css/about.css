@@ -1,0 +1,244 @@
+:root{
+   --s:rgba(126, 255, 52, 0.275);
+   /* --ss:rgba(180, 255, 136, 0.256); */
+   --bg: #232322;
+   --ss:linear-gradient(270deg,var(--s), rgba(180, 255, 136, 0.256))
+}
+
+body{
+    position: relative;
+    height: auto;
+    overflow-x: hidden !important;
+}
+
+header{
+   box-shadow: #888 0px 1px 4px;
+}
+
+header img {
+    width: 40px;
+    height: 50px;
+}
+
+
+
+.pr{
+    height: 400px;
+}
+
+img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.a{
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+    background-color: black;
+    text-decoration: none;
+    transition: 0.3s linear ;
+}
+
+
+
+.back{
+    margin: 10ox auto;
+}
+
+h1{
+    margin-bottom: 15px;
+}
+
+.prix{
+    color: brown;
+    margin: 10px 0;
+}
+
+p{
+    margin-top: 20px;
+    /* letter-spacing: 2px; */
+}
+.photos{
+    height: 100px ;
+    display: flex;
+    /* overflow-x: scroll; */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* justify-content: space-between; */
+}
+
+.photos img{
+    width: 19%;
+    border-radius: 0;
+margin: 0 0px 0 0;
+padding: 1px;
+border: 1px solid brown;
+}
+
+
+@media (max-width: 768px) {
+   .photos{
+    height: 100px ;
+    display: flex;
+    overflow-x: scroll;
+    
+    /* justify-content: space-between; */
+}
+}
+
+ .to{
+        display: none;
+    }
+
+
+
+@media (max-width: 770px) {
+    .to{
+        display: block;
+    }
+    .bo{
+        display: none;
+    }
+}
+/*  */
+.form{
+    transition: 0.5s;
+}
+
+
+
+.deplay{
+    position: absolute;
+    left: 200%;
+    display: none;
+}
+.deplay-l{
+    opacity: 0;
+    transition: 1s;
+}
+
+h5, 
+.label{
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 15px;
+     background-color: brown;
+     border-radius: 15px;
+     width: fit-content;
+     margin: 10px auto;
+     padding: 0 5px;
+     color: white;
+}
+
+input{
+padding: 8px;
+border-radius: 8px;
+border: 1px solid black;
+font-size: 20px;
+width: 350px;
+}
+input[type="submit"]{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+input[type="submit"]:hover{
+     color: black;
+    background-color: white;
+    border: 1px black solid;
+}
+
+input[type="number"]:focus{
+        background-color: white;
+        color: black;
+
+}
+
+input:focus{
+    outline: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.379);
+}
+
+i{
+    color: white;
+}
+
+.pForm{
+    background-color: rgba(0, 0, 0, 0.379);
+}
+
+.label{
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.red{
+    background-color: rgb(175, 140, 140);
+}
+.op{
+    transition: 0.5s;
+    opacity: 0;
+}
+
+
+.thanks{
+    color: white;
+}
+
+.thanks > p{
+    font-size: 20px;
+    width: fit-content;
+    margin: 1px auto;
+    background-color: black;
+    padding: 0px 15px;
+}
+
+.thanks p i{
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.r{
+    border: 1px solid brown;
+    border-radius: 5px;
+}
+
+
+.thanks > i {
+    font-size:100px;
+    color: brown;
+  margin: 50px 0;
+}
+
+.contact{
+    color: black;
+}
+
+.contact i {
+    color: black;
+}
+
+.a:hover{
+    color: black;
+    background-color: white;
+    border: 1px black solid;
+}
+
+.Quantity{
+    width: 100px;
+    
+}
+
+
+.Sprice,
+.total{
+    color: brown;
+}

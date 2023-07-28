@@ -1,0 +1,128 @@
+:root{
+   --s:rgba(126, 255, 52, 0.275);
+   /* --ss:rgba(180, 255, 136, 0.256); */
+   --bg: #232322;
+   --ss:linear-gradient(270deg,var(--s), rgba(180, 255, 136, 0.256))
+}
+
+body{
+    /* background-color: #eee; */
+    position: relative;
+    height: auto;
+    overflow-x: hidden !important;
+}
+/* rhea1986@hotmail.com */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: all 0.3s;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+header{
+   box-shadow: #888 0px 1px 4px;
+}
+
+header img {
+    width: 40px;
+    height: 50px;
+}
+
+.t{
+    width: fit-content;
+    margin: 1px auto;
+    position: relative;
+    text-shadow: #888 0px 1px 4px;
+}
+
+
+
+.pro{
+height: 450px;
+justify-content: center;
+align-items: center;
+}
+
+.titel{
+    letter-spacing: 2px;
+    font-size: 18px;
+    position: relative;
+    width: fit-content;
+    margin: 15px auto 1px;
+    color: black;
+}
+
+.titel::after{
+    content: "";
+    position: absolute;
+    left: -10%;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #000000;
+    transition: all 0.5s;
+    z-index: -1;
+    border-radius: 15px;
+    transform: scale(10deg);
+}
+
+
+.pro:hover .titel{
+    color: white;
+}
+
+.pro:hover .titel::after{
+width: 120%;
+}
+
+.img{
+    overflow: hidden;
+    width: fit-content;
+    border: 1px solid brown;
+}
+
+.img img{
+    width: auto;
+    height: 100%;
+}
+
+.pro:hover img{
+    transform: scale(1.1) ;
+}
+
+.prix{
+    font-size: 20px;
+    color: brown;
+    /* color: var(--s); */
+}
+
+
+
+
+.k{
+    position: absolute;
+    top: 0;
+    right:  -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--ss);
+    z-index: 100;
+    transition: all 2s;
+}
+.a{
+    right: 00%;
+}
+
+
+.b{
+    transform: translateY(-100%);
+}
+.d{
+    transform: translateY(100%);
+}
+
+
+
